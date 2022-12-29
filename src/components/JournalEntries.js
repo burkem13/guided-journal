@@ -1,4 +1,4 @@
-import JournalEntry from './JournalEntry';
+import JournalEntry from './JournalEntry.js';
 import './JournalEntries.css';
 
 const JournalEntries = (props) => {

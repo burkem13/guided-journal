@@ -4,8 +4,8 @@ const JournalPrompt = (props) => {
 
     return (
         <div class="journal-prompt">
-            <h2>{props.promptText}</h2>
-            <p>{props.promptResponse}</p>
+            <h2 class="journal-prompt-text">{props.promptText}</h2>
+            <p class="journal-prompt-response">{props.promptResponse}</p>
         </div>
     );
 }

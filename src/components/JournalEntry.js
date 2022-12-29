@@ -1,7 +1,9 @@
-import JournalPrompt from "./JournalPrompt";
+import JournalPrompt from "./JournalPrompt.js";
 import './JournalEntry.css';
 
 const JournalEntry = (props) => {
+
+    
 
     return (
         <div class='journal-entry'>

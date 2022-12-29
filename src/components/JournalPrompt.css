@@ -8,5 +8,6 @@ p{
 }
 
 .journal-prompt{
-
+    max-width: 95%;
+    padding: 1rem;
 }

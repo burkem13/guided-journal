@@ -1,6 +1,9 @@
-import JournalEntries from "./JournalEntries";
+import JournalEntries from "./components/JournalEntries.js";
+import Navbar from "./components/Navbar.js";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from "./pages/Home.js";
 
-function App() {
+const App = () => {
 
 
     //Sample data set
@@ -51,7 +54,7 @@ function App() {
             gratitudePromptText: 'List at least 3 things that you are grateful for today.',
             gratitudeResponseList: [
                 {
-                    reason: 'For the su.n'
+                    reason: 'For the sun.'
                 },
                 {
                     reason: 'For family.'
@@ -82,9 +85,15 @@ function App() {
     ]
 
     return (
-        <div>
+        <>
+            <BrowserRouter>
+                <Navbar/>
+                <Routes>
+                    <Route path='/' component={Home}/>
+                </Routes>
+            </BrowserRouter>
             <JournalEntries entryList={sampleEntries}/>
-        </div>
+        </>
     );
 }
 
